@@ -8,7 +8,7 @@ const pageVariants = { initial: { opacity: 0 }, animate: { opacity: 1, transitio
 const plans = [
   {
     name: 'Basic',
-    price: '299',
+    price: '599',
     period: '/vehicle/month',
     desc: 'Perfect for small fleets and individual owners getting started with GPS tracking.',
     color: 'border-white/10',
@@ -28,7 +28,7 @@ const plans = [
   },
   {
     name: 'Professional',
-    price: '599',
+    price: '999',
     period: '/vehicle/month',
     desc: 'For growing businesses that need advanced analytics and full fleet intelligence.',
     color: 'border-primary/50',

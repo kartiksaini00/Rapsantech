@@ -11,7 +11,7 @@ const timeline = [
   { year: '2022', event: 'Reached 500 clients milestone. Launched school bus tracking module serving 50 schools.' },
   { year: '2023', event: 'Expanded to 15 states. Launched mobile apps on iOS and Android. 5,000+ vehicles tracked.' },
   { year: '2024', event: 'Crossed 1,000 enterprise clients. Launched fuel monitoring and cold chain solutions.' },
-  { year: '2025', event: '5,000+ vehicles, 2,000+ clients across 28 states. Expanding to Southeast Asia.' },
+  { year: '2025', event: '5,000+ vehicles, 2,000+ clients across 28 states. Expanding to Southeast India.' },
 ]
 
 const values = [

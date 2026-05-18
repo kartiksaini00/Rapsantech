@@ -22,10 +22,10 @@ function CountUp({ end, duration = 2, suffix = '' }) {
 }
 
 const stats = [
-  { value: 50000, suffix: '+', label: 'Vehicles Tracked', desc: 'Across India & abroad' },
+  { value: 5000, suffix: '+', label: 'Vehicles Tracked', desc: 'Across India & abroad' },
   { value: 2000, suffix: '+', label: 'Fleet Clients', desc: 'SME to Enterprise' },
   { value: 99, suffix: '.9%', label: 'Uptime SLA', desc: 'Industry-leading reliability' },
-  { value: 15, suffix '+', label: 'Years Experience', desc: 'GPS tracking expertise' },
+  { value: 5, suffix: '+', label: 'Years Experience', desc: 'GPS tracking expertise' },
   { value: 30, suffix: '%', label: 'Fuel Savings', desc: 'Average client reduction' },
   { value: 24, suffix: '/7', label: 'Support', desc: 'Round-the-clock assistance' },
 ]
