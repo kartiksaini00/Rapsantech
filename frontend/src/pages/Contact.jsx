@@ -95,9 +95,9 @@ export default function Contact() {
                     <MapPin className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-white font-semibold mb-1">Rapsan Tech HQ</h3>
-                  <p className="text-text-secondary text-sm">123 Business Street</p>
-                  <p className="text-text-secondary text-sm">New Delhi, India</p>
-                  <a href="https://maps.google.com" target="_blank" rel="noreferrer" className="inline-block mt-4 text-accent text-sm hover:underline">Open in Google Maps →</a>
+                  <p className="text-text-secondary text-sm">truck market sharanpur road Yamunanager</p>
+                  <p className="text-text-secondary text-sm">Haryana, India</p>
+                  <a href="https://www.google.com/maps/place/Saharanpur+Rd,+Old+Hamida,+Yamuna+Nagar,+Haryana+135001/@30.115555,77.2818762,15.69z/data=!4m6!3m5!1s0x390efa2073c41717:0x395b2e6dfacbd75!8m2!3d30.1168337!4d77.2847372!16s%2Fg%2F11sk8_gx0h?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer" className="inline-block mt-4 text-accent text-sm hover:underline">Open in Google Maps →</a>
                 </div>
               </div>
             </motion.div>
