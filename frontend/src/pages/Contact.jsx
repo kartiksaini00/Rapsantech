@@ -7,10 +7,10 @@ import axios from 'axios'
 const pageVariants = { initial: { opacity: 0 }, animate: { opacity: 1, transition: { duration: 0.4 } }, exit: { opacity: 0 } }
 
 const contactInfo = [
-  { icon: Phone, title: 'Phone', value: '+91 9876543210', sub: 'Mon–Sat, 9am–7pm IST', href: 'tel:+919876543210', color: 'text-blue-400' },
-  { icon: MessageCircle, title: 'WhatsApp', value: '+91 9876543210', sub: 'Available 24/7', href: 'https://wa.me/919876543210', color: 'text-green-400' },
-  { icon: Mail, title: 'Email', value: 'info@rapsantech.in', sub: 'Reply within 4 hours', href: 'mailto:info@rapsantech.in', color: 'text-accent' },
-  { icon: MapPin, title: 'Office', value: '123 Business Street', sub: 'New Delhi, India', href: '#', color: 'text-purple-400' },
+  { icon: Phone, title: 'Phone', value: '+91 7668698853', sub: 'Mon–Sat, 9am–7pm IST', href: 'tel:+917668698853', color: 'text-blue-400' },
+  { icon: MessageCircle, title: 'WhatsApp', value: '+91 7668698853', sub: 'Available 24/7', href: 'https://wa.me/917668698853', color: 'text-green-400' },
+  { icon: Mail, title: 'Email', value: 'rapsantechoffical@gmail.com', sub: 'Reply within 4 hours', href: 'mailto:rapsantechoffical@gmail.com', color: 'text-accent' },
+  { icon: MapPin, title: 'Office', value: 'truck market sharanpur road Yamunanager', sub: 'Haryana, India', href: '#', color: 'text-purple-400' },
 ]
 
 export default function Contact() {
