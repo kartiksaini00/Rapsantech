@@ -20,12 +20,51 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    setLoading(true)
+
     try {
-      await axios.post('/api/contact', form)
+      setLoading(true)
+
+      // Your WhatsApp Number
+      const whatsappNumber = '917668698853'
+
+      // Message Format
+      const text = `
+*🚀 New Contact Form Submission*
+
+👤 Name: ${form.name}
+
+📧 Email: ${form.email}
+
+📱 Phone: ${form.phone}
+
+🏢 Company: ${form.company}
+
+📌 Subject: ${form.subject}
+
+💬 Message:
+${form.message}
+    `
+
+      // WhatsApp URL
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`
+
+      // Open WhatsApp
+      window.open(whatsappURL, '_blank')
+
+      // Success
       setStatus('success')
-      setForm({ name: '', email: '', phone: '', company: '', subject: '', message: '' })
-    } catch {
+
+      // Clear Form
+      setForm({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        subject: '',
+        message: '',
+      })
+
+    } catch (error) {
       setStatus('error')
     } finally {
       setLoading(false)
@@ -67,15 +106,15 @@ export default function Contact() {
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-2 gap-4">
-                    <input className="input-field" placeholder="Full Name *" value={form.name} onChange={e => setForm({...form, name: e.target.value})} required />
-                    <input className="input-field" type="email" placeholder="Email *" value={form.email} onChange={e => setForm({...form, email: e.target.value})} required />
+                    <input className="input-field" placeholder="Full Name *" value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} required />
+                    <input className="input-field" type="email" placeholder="Email *" value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} required />
                   </div>
                   <div className="grid grid-cols-2 gap-4">
-                    <input className="input-field" placeholder="Phone" value={form.phone} onChange={e => setForm({...form, phone: e.target.value})} />
-                    <input className="input-field" placeholder="Company" value={form.company} onChange={e => setForm({...form, company: e.target.value})} />
+                    <input className="input-field" placeholder="Phone" value={form.phone} onChange={e => setForm({ ...form, phone: e.target.value })} />
+                    <input className="input-field" placeholder="Company" value={form.company} onChange={e => setForm({ ...form, company: e.target.value })} />
                   </div>
-                  <input className="input-field" placeholder="Subject *" value={form.subject} onChange={e => setForm({...form, subject: e.target.value})} required />
-                  <textarea className="input-field resize-none" rows={5} placeholder="Your message *" value={form.message} onChange={e => setForm({...form, message: e.target.value})} required />
+                  <input className="input-field" placeholder="Subject *" value={form.subject} onChange={e => setForm({ ...form, subject: e.target.value })} required />
+                  <textarea className="input-field resize-none" rows={5} placeholder="Your message *" value={form.message} onChange={e => setForm({ ...form, message: e.target.value })} required />
                   {status === 'error' && <p className="text-red-400 text-sm">Failed to send. Please try again.</p>}
                   <button type="submit" disabled={loading} className="btn-primary w-full justify-center">
                     {loading ? <span className="animate-spin w-4 h-4 border-2 border-white/30 border-t-white rounded-full" /> : <Send className="w-4 h-4" />}
