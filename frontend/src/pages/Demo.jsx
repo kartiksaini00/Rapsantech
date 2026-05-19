@@ -56,9 +56,9 @@ export default function Demo() {
               <div className="glass rounded-2xl p-6 space-y-4">
                 <h3 className="font-semibold text-white">Or reach us directly</h3>
                 {[
-                  { icon: Phone, label: 'Call us', value: '+91 9876543210', href: 'tel:+919876543210' },
-                  { icon: Mail, label: 'Email us', value: 'info@rapsantech.in', href: 'mailto:info@rapsantech.in' },
-                  { icon: MessageCircle, label: 'WhatsApp', value: 'Chat with us now', href: 'https://wa.me/919876543210' },
+                  { icon: Phone, label: 'Call us', value: '+91 7668698853', href: 'tel:+917668698853' },
+                  { icon: Mail, label: 'Email us', value: 'rapsantechoffical@gmail.com', href: 'mailto:rapsantechoffical@gmail.com' },
+                  { icon: MessageCircle, label: 'WhatsApp', value: 'Chat with us now', href: 'https://wa.me/917668698853' },
                 ].map((c) => {
                   const Icon = c.icon
                   return (

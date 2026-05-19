@@ -70,9 +70,9 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-accent" />
                 +91 7668698853
               </a>
-              <a href="mailto:info@rapsantech.in" className="flex items-center gap-2 text-text-secondary hover:text-accent text-sm transition-colors">
+              <a href="mailto:rapsantechoffical@gmail.com" className="flex items-center gap-2 text-text-secondary hover:text-accent text-sm transition-colors">
                 <Mail className="w-4 h-4 text-accent" />
-                info@rapsantech.in
+                rapsantechoffical@gmail.com
               </a>
               <a href="https://www.rapsantech.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-text-secondary hover:text-accent text-sm transition-colors">
                 <Globe className="w-4 h-4 text-accent" />
