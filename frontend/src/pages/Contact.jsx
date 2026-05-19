@@ -95,7 +95,7 @@ export default function Contact() {
                     <MapPin className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-white font-semibold mb-1">Rapsan Tech HQ</h3>
-                  <p className="text-text-secondary text-sm">truck market sharanpur road Yamunanager</p>
+                  <p className="text-text-secondary text-sm">truck market saharanpur road Yamunanager</p>
                   <p className="text-text-secondary text-sm">Haryana, India</p>
                   <a href="https://maps.google.com" target="_blank" rel="noreferrer" className="inline-block mt-4 text-accent text-sm hover:underline">Open in Google Maps →</a>
                 </div>
